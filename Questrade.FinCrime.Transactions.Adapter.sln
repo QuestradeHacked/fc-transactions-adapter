@@ -1,0 +1,253 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F4228EA9-1AC9-4F37-9126-A2C49382C600}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "src\Adapter\Adapter.csproj", "{AD140C96-6168-48CF-8810-A3E4AD83BBB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "src\Application\Application.csproj", "{F49E6B16-202D-4AD6-820B-E3EC54DA5D4F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "src\Domain\Domain.csproj", "{EF751FE3-9F2D-41D5-AD35-777E96F1EC61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "src\Infra\Infra.csproj", "{2AE7892F-9338-4847-A464-99CA014C6515}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{EE7EACCE-55D6-4C13-B9AE-72F6B797D506}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unit", "src\Tests\Unit\Unit.csproj", "{5CF266A1-D0C5-4AE5-BA88-8A5A1D87BCD6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Integration", "src\Tests\Integration\Integration.csproj", "{606A75ED-8DCE-4567-BC81-DA4D90561BB8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution items", "solution items", "{A88767CE-CC94-43A0-A7E5-D8C05A46AF12}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cfg", "cfg", "{4EBA0CCD-DAEA-4BBC-892B-417C1DF0A2B6}"
+	ProjectSection(SolutionItems) = preProject
+		cfg\envvars.yaml = cfg\envvars.yaml
+		cfg\envvars-prod.yaml = cfg\envvars-prod.yaml
+		cfg\envvars-sit.yaml = cfg\envvars-sit.yaml
+		cfg\envvars-uat.yaml = cfg\envvars-uat.yaml
+		cfg\paas.config.yaml = cfg\paas.config.yaml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{48385F43-2B59-49AF-8F91-6CF191ACEE58}"
+	ProjectSection(SolutionItems) = preProject
+		Dockerfile = Dockerfile
+		.dockerignore = .dockerignore
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{3BC73455-3F45-4979-992C-88F4D9C72847}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "editorconfig", "editorconfig", "{16124AB1-DCEE-4B31-8092-A51BD701910C}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "git", "git", "{A2CA582D-D9D4-4A2E-A38E-D58A975FDEC0}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.git\.DS_Store = .git\.DS_Store
+		.git\config = .git\config
+		.git\objects\61\ab97bcdf35b3ab00c61aa3b32bd3ff6434253c = .git\objects\61\ab97bcdf35b3ab00c61aa3b32bd3ff6434253c
+		.git\objects\68\99609626f8888d90aa46efd8811f61dd07019a = .git\objects\68\99609626f8888d90aa46efd8811f61dd07019a
+		.git\objects\9b\48ea8fc03f29eb3be17348881f3f05c789366f = .git\objects\9b\48ea8fc03f29eb3be17348881f3f05c789366f
+		.git\objects\9e\01e92f4cb4373703dd060fd4c9f6306c437a51 = .git\objects\9e\01e92f4cb4373703dd060fd4c9f6306c437a51
+		.git\objects\35\d097fec10c81b175fcaceb151d8c1dc2917c8c = .git\objects\35\d097fec10c81b175fcaceb151d8c1dc2917c8c
+		.git\objects\56\34abf77ff2f45eadd046ae08e37e91232be3a0 = .git\objects\56\34abf77ff2f45eadd046ae08e37e91232be3a0
+		.git\objects\3d\102557ec0fb5f18fe2ee9453365f91426a5d5a = .git\objects\3d\102557ec0fb5f18fe2ee9453365f91426a5d5a
+		.git\objects\3d\ecf9b7f55ffb7a820a162bd71e250a61840023 = .git\objects\3d\ecf9b7f55ffb7a820a162bd71e250a61840023
+		.git\objects\3d\6ab1eade119602384d245550cfe616f11da4b2 = .git\objects\3d\6ab1eade119602384d245550cfe616f11da4b2
+		.git\objects\3d\2f5580c9da20483a24724be696a69057c25b36 = .git\objects\3d\2f5580c9da20483a24724be696a69057c25b36
+		.git\objects\33\7d3276c7e30919bd39b349d55b077646b0ea19 = .git\objects\33\7d3276c7e30919bd39b349d55b077646b0ea19
+		.git\objects\05\84d46a1561c5ee952943bc9778eb7818ec280e = .git\objects\05\84d46a1561c5ee952943bc9778eb7818ec280e
+		.git\objects\b5\1e705144a12d6e5cc434d607d42856e0542e96 = .git\objects\b5\1e705144a12d6e5cc434d607d42856e0542e96
+		.git\objects\.DS_Store = .git\objects\.DS_Store
+		.git\objects\ad\6ae01a05c81d8ce92603fd2bd995c31d1abb7d = .git\objects\ad\6ae01a05c81d8ce92603fd2bd995c31d1abb7d
+		.git\objects\bb\23fb7d66b7582d44462f74ac765df5e665d918 = .git\objects\bb\23fb7d66b7582d44462f74ac765df5e665d918
+		.git\objects\d0\464caccc7207be1bc359b4227a4109400d204d = .git\objects\d0\464caccc7207be1bc359b4227a4109400d204d
+		.git\objects\be\9b59ea1d1f687ccc57dc71ee0b36fb3aa0a2f4 = .git\objects\be\9b59ea1d1f687ccc57dc71ee0b36fb3aa0a2f4
+		.git\objects\be\1fabb6020f5e9ad2aaf344ca52be889a75068e = .git\objects\be\1fabb6020f5e9ad2aaf344ca52be889a75068e
+		.git\objects\df\a4e0661a8e1d61cf7c6a3d9cdc8c62c02d0963 = .git\objects\df\a4e0661a8e1d61cf7c6a3d9cdc8c62c02d0963
+		.git\objects\a2\bdcbb8be2aa7c9ce3ce6ce9643c7cf2f4b2482 = .git\objects\a2\bdcbb8be2aa7c9ce3ce6ce9643c7cf2f4b2482
+		.git\objects\bd\e86b4523ddb177abd0f7ae9f73cc4b5d45908f = .git\objects\bd\e86b4523ddb177abd0f7ae9f73cc4b5d45908f
+		.git\objects\d6\c211fe25037bf3d61839b9ccd2d1113ae0dc18 = .git\objects\d6\c211fe25037bf3d61839b9ccd2d1113ae0dc18
+		.git\objects\d6\921c62c739cf10d8da9dde55306f94e093f4db = .git\objects\d6\921c62c739cf10d8da9dde55306f94e093f4db
+		.git\objects\ae\5f7f8e1f4d43cceabedf4b4850e826dc66ef60 = .git\objects\ae\5f7f8e1f4d43cceabedf4b4850e826dc66ef60
+		.git\objects\ab\f0edba7ce7a1be70337d35559e6b1b2c705307 = .git\objects\ab\f0edba7ce7a1be70337d35559e6b1b2c705307
+		.git\objects\e2\c787b04ed8bdba649f47c15373d02d9876c758 = .git\objects\e2\c787b04ed8bdba649f47c15373d02d9876c758
+		.git\objects\f4\641a208093a708a1264df42d524e44d734ffdc = .git\objects\f4\641a208093a708a1264df42d524e44d734ffdc
+		.git\objects\c0\7d53ad91035216343eff7897eafd4fff2d0bfb = .git\objects\c0\7d53ad91035216343eff7897eafd4fff2d0bfb
+		.git\objects\c0\4911e21d34202f92bb631d1bad28de40a5e64d = .git\objects\c0\4911e21d34202f92bb631d1bad28de40a5e64d
+		.git\objects\c9\4e71f472f4b433fc1e60f638bb0d4967aa77d8 = .git\objects\c9\4e71f472f4b433fc1e60f638bb0d4967aa77d8
+		.git\objects\f2\c1f67a956d6fccdcde68b24733a9fa1a3cf453 = .git\objects\f2\c1f67a956d6fccdcde68b24733a9fa1a3cf453
+		.git\objects\f5\fcaff73881c58fc5fbf87d5d4c87dbf615f191 = .git\objects\f5\fcaff73881c58fc5fbf87d5d4c87dbf615f191
+		.git\objects\ca\76b8abf332aefa35bc8e791cd9dfb1756c45cc = .git\objects\ca\76b8abf332aefa35bc8e791cd9dfb1756c45cc
+		.git\objects\e4\36874f003aec991114e01f869dcf8a3f230636 = .git\objects\e4\36874f003aec991114e01f869dcf8a3f230636
+		.git\objects\c8\d35db4a3391229b257a84b648ac9ce5a146c14 = .git\objects\c8\d35db4a3391229b257a84b648ac9ce5a146c14
+		.git\objects\ed\d5b019641d0d5bc607bbdc6182552917f4938b = .git\objects\ed\d5b019641d0d5bc607bbdc6182552917f4938b
+		.git\objects\4e\5af06d3ce6ef3b8c78043df91b32c54ac2c4b1 = .git\objects\4e\5af06d3ce6ef3b8c78043df91b32c54ac2c4b1
+		.git\objects\pack\pack-997add9b41e159ba8dc9c89d12785df81f9ae415.idx = .git\objects\pack\pack-997add9b41e159ba8dc9c89d12785df81f9ae415.idx
+		.git\objects\pack\pack-997add9b41e159ba8dc9c89d12785df81f9ae415.pack = .git\objects\pack\pack-997add9b41e159ba8dc9c89d12785df81f9ae415.pack
+		.git\objects\7d\14d64bf35cc53b2ff1f2c105dc42de8bb0a762 = .git\objects\7d\14d64bf35cc53b2ff1f2c105dc42de8bb0a762
+		.git\objects\29\2811286f1d4d7d57db96274d6a1441a0f11ba4 = .git\objects\29\2811286f1d4d7d57db96274d6a1441a0f11ba4
+		.git\objects\16\6f6b17fba2117b011cf8a2649ee15f35185104 = .git\objects\16\6f6b17fba2117b011cf8a2649ee15f35185104
+		.git\objects\42\a8be07809c0a7d543a6bf92318933a8b7b35d4 = .git\objects\42\a8be07809c0a7d543a6bf92318933a8b7b35d4
+		.git\objects\89\d5c10a02e13d4a3f2e23c81a34711c15ddce39 = .git\objects\89\d5c10a02e13d4a3f2e23c81a34711c15ddce39
+		.git\objects\73\08514ee0978a692777d35ca1d7135a5d375638 = .git\objects\73\08514ee0978a692777d35ca1d7135a5d375638
+		.git\objects\87\b3723da31a801b3520449814c438e6aa7f3d42 = .git\objects\87\b3723da31a801b3520449814c438e6aa7f3d42
+		.git\objects\74\20bd34b8887aead7ee8263910e2d5fe408a571 = .git\objects\74\20bd34b8887aead7ee8263910e2d5fe408a571
+		.git\objects\28\023655a19a7db93b99e011fabe8a9ccc984c9a = .git\objects\28\023655a19a7db93b99e011fabe8a9ccc984c9a
+		.git\objects\28\2aaa5959ee7529d7b375570d0992461efc8773 = .git\objects\28\2aaa5959ee7529d7b375570d0992461efc8773
+		.git\objects\7b\a865171b516e2a25eebf93a7cfb3e7c4e5adc2 = .git\objects\7b\a865171b516e2a25eebf93a7cfb3e7c4e5adc2
+		.git\objects\7e\a2b57547e358e984323e0fa38410decb2e51b4 = .git\objects\7e\a2b57547e358e984323e0fa38410decb2e51b4
+		.git\objects\10\5c87190626a28653e1f9352b5e0bf60a9c85e5 = .git\objects\10\5c87190626a28653e1f9352b5e0bf60a9c85e5
+		.git\objects\4c\07e5a588bb7bf7a3cde6860eb170aa321195a1 = .git\objects\4c\07e5a588bb7bf7a3cde6860eb170aa321195a1
+		.git\objects\72\3e77f79a0b22586a496a748980a0878b96aa9e = .git\objects\72\3e77f79a0b22586a496a748980a0878b96aa9e
+		.git\objects\44\807b53d67e39c44d8c4e50e404d4c6617d4ffa = .git\objects\44\807b53d67e39c44d8c4e50e404d4c6617d4ffa
+		.git\objects\43\ca0ebfb5ce0a687c33d90328a9e8caf8088292 = .git\objects\43\ca0ebfb5ce0a687c33d90328a9e8caf8088292
+		.git\objects\88\c396c2c82f5062ba28b9799a0340ccdb026484 = .git\objects\88\c396c2c82f5062ba28b9799a0340ccdb026484
+		.git\objects\88\b6a4abff62f5a78b7573d2c2b79fb311e3b293 = .git\objects\88\b6a4abff62f5a78b7573d2c2b79fb311e3b293
+		.git\objects\88\062a03fe5b84477edad5529c7b24b5eac57269 = .git\objects\88\062a03fe5b84477edad5529c7b24b5eac57269
+		.git\objects\07\61a744a7781bbf289c8b77c4d5da93e6cdc36f = .git\objects\07\61a744a7781bbf289c8b77c4d5da93e6cdc36f
+		.git\objects\36\c07d5ce952fbde8230f921a4254a9e9d79b29b = .git\objects\36\c07d5ce952fbde8230f921a4254a9e9d79b29b
+		.git\objects\36\0095cb5eba512cb8b40f1f92c1e6d55da3dcf1 = .git\objects\36\0095cb5eba512cb8b40f1f92c1e6d55da3dcf1
+		.git\objects\5c\d3e18af988c97f4bcaf0c3318bacc64554bd64 = .git\objects\5c\d3e18af988c97f4bcaf0c3318bacc64554bd64
+		.git\objects\5c\e4020589f96fc64393e0050da5e200cac11130 = .git\objects\5c\e4020589f96fc64393e0050da5e200cac11130
+		.git\objects\5c\93e1090d9ffe4e8132ac225e91d5eac5224b41 = .git\objects\5c\93e1090d9ffe4e8132ac225e91d5eac5224b41
+		.git\objects\5d\689fd0254e5840756ace10d2b32e54ced700de = .git\objects\5d\689fd0254e5840756ace10d2b32e54ced700de
+		.git\objects\96\d2893d0acc20dca3c7a8be9e95fc84888c9838 = .git\objects\96\d2893d0acc20dca3c7a8be9e95fc84888c9838
+		.git\objects\96\6384f068d0613d8f1f2af2098a52c9fe9a6423 = .git\objects\96\6384f068d0613d8f1f2af2098a52c9fe9a6423
+		.git\objects\37\29ff0cd1acce411e814ec416b82ac0f239a4e0 = .git\objects\37\29ff0cd1acce411e814ec416b82ac0f239a4e0
+		.git\objects\6d\97088a080eff8a5fd24cbbd8fb46930468ad9a = .git\objects\6d\97088a080eff8a5fd24cbbd8fb46930468ad9a
+		.git\objects\06\f582f807cf5c1d6840ac493f77d3593fef7d89 = .git\objects\06\f582f807cf5c1d6840ac493f77d3593fef7d89
+		.git\objects\06\418d6196f3e6ec8d6d00560617a3185c0fba03 = .git\objects\06\418d6196f3e6ec8d6d00560617a3185c0fba03
+		.git\objects\99\799d5b2d5e209c465497402b38c0904695d126 = .git\objects\99\799d5b2d5e209c465497402b38c0904695d126
+		.git\objects\63\c9d3de9324af61cb4039dd17ce5deabff3cdfd = .git\objects\63\c9d3de9324af61cb4039dd17ce5deabff3cdfd
+		.git\objects\63\f841c67e6c2bac5b13bb5d4faa88f69ef20828 = .git\objects\63\f841c67e6c2bac5b13bb5d4faa88f69ef20828
+		.git\objects\0a\eeded711a26404ac7f6da529c4f9607d9b1644 = .git\objects\0a\eeded711a26404ac7f6da529c4f9607d9b1644
+		.git\objects\64\48ad4d75abf5c0529bd8420b6f746ce5c9320a = .git\objects\64\48ad4d75abf5c0529bd8420b6f746ce5c9320a
+		.git\objects\b1\febaaddfa96c56851702deeb3d8df37c83aa6d = .git\objects\b1\febaaddfa96c56851702deeb3d8df37c83aa6d
+		.git\objects\a9\ad1354abc812a73ff130f3f2ff82e7831c1677 = .git\objects\a9\ad1354abc812a73ff130f3f2ff82e7831c1677
+		.git\objects\af\7b5a386281075e0857b65c15baf3596b17fdcb = .git\objects\af\7b5a386281075e0857b65c15baf3596b17fdcb
+		.git\objects\b9\3b7a02a46ee1ee648773ec4108e77c0765eaf4 = .git\objects\b9\3b7a02a46ee1ee648773ec4108e77c0765eaf4
+		.git\objects\ef\a7f9afa20a5f65e0c66a3abebd1e241727411f = .git\objects\ef\a7f9afa20a5f65e0c66a3abebd1e241727411f
+		.git\objects\c3\aaedb70c94089d9938df1927612680ea2f9fec = .git\objects\c3\aaedb70c94089d9938df1927612680ea2f9fec
+		.git\objects\c3\7e1967215ac661dc92233db7162915fd831dca = .git\objects\c3\7e1967215ac661dc92233db7162915fd831dca
+		.git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391 = .git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391
+		.git\objects\ff\66ba6b28c77eca10218b00a4627f80d4a141c1 = .git\objects\ff\66ba6b28c77eca10218b00a4627f80d4a141c1
+		.git\objects\ff\f1b8ba11399816dbf76c90b296e90fe432f34b = .git\objects\ff\f1b8ba11399816dbf76c90b296e90fe432f34b
+		.git\objects\ff\5a0a4f708a35f503fc406d1a5905371764ef9e = .git\objects\ff\5a0a4f708a35f503fc406d1a5905371764ef9e
+		.git\objects\f8\63429893f745f271391c6032b5b39f9a47ed32 = .git\objects\f8\63429893f745f271391c6032b5b39f9a47ed32
+		.git\objects\46\7a064f1f2887799d52f7f55c6886b28d869187 = .git\objects\46\7a064f1f2887799d52f7f55c6886b28d869187
+		.git\objects\41\14b4bc5ce29de703da3cd7ab5ed2b21cd192ae = .git\objects\41\14b4bc5ce29de703da3cd7ab5ed2b21cd192ae
+		.git\objects\1b\af7abaeee96138c6cf43f41c65a4eb7ddf8981 = .git\objects\1b\af7abaeee96138c6cf43f41c65a4eb7ddf8981
+		.git\objects\77\548634110408624788dae372ae644773c8a111 = .git\objects\77\548634110408624788dae372ae644773c8a111
+		.git\objects\1e\a9f07d8d13f2c5602e473db043ab4955cc794b = .git\objects\1e\a9f07d8d13f2c5602e473db043ab4955cc794b
+		.git\objects\4a\df6fa0d13884343010d08934e42f6a4c5c314c = .git\objects\4a\df6fa0d13884343010d08934e42f6a4c5c314c
+		.git\objects\4f\44b1fa73ccfe4c74cc6f5b6f2dc6aaf1616c04 = .git\objects\4f\44b1fa73ccfe4c74cc6f5b6f2dc6aaf1616c04
+		.git\objects\8c\949ad64b88e4ea728fa87ab4af3b06662301ba = .git\objects\8c\949ad64b88e4ea728fa87ab4af3b06662301ba
+		.git\objects\1d\7b06db060263c28e0ca9f28d61961ee5bacde9 = .git\objects\1d\7b06db060263c28e0ca9f28d61961ee5bacde9
+		.git\objects\71\b02d603c3749eacccd8d9d28cf931610ae8858 = .git\objects\71\b02d603c3749eacccd8d9d28cf931610ae8858
+		.git\objects\14\82fe75bcbd992ce790a1dc7539dbbd354374ea = .git\objects\14\82fe75bcbd992ce790a1dc7539dbbd354374ea
+		.git\objects\14\3eae2577e02528d106ffb427e26f602cbd4edb = .git\objects\14\3eae2577e02528d106ffb427e26f602cbd4edb
+		.git\objects\22\b0134dbdf7506e1eae79795b60e7f071702c6e = .git\objects\22\b0134dbdf7506e1eae79795b60e7f071702c6e
+		.git\HEAD = .git\HEAD
+		.git\info\exclude = .git\info\exclude
+		.git\logs\HEAD = .git\logs\HEAD
+		.git\logs\refs\heads\fc714\create-base-code-and-repository = .git\logs\refs\heads\fc714\create-base-code-and-repository
+		.git\logs\refs\heads\master = .git\logs\refs\heads\master
+		.git\logs\refs\remotes\origin\fc714\create-base-code-and-repository = .git\logs\refs\remotes\origin\fc714\create-base-code-and-repository
+		.git\logs\refs\remotes\origin\HEAD = .git\logs\refs\remotes\origin\HEAD
+		.git\description = .git\description
+		.git\hooks\commit-msg.sample = .git\hooks\commit-msg.sample
+		.git\hooks\pre-rebase.sample = .git\hooks\pre-rebase.sample
+		.git\hooks\pre-commit.sample = .git\hooks\pre-commit.sample
+		.git\hooks\applypatch-msg.sample = .git\hooks\applypatch-msg.sample
+		.git\hooks\fsmonitor-watchman.sample = .git\hooks\fsmonitor-watchman.sample
+		.git\hooks\pre-receive.sample = .git\hooks\pre-receive.sample
+		.git\hooks\prepare-commit-msg.sample = .git\hooks\prepare-commit-msg.sample
+		.git\hooks\post-update.sample = .git\hooks\post-update.sample
+		.git\hooks\pre-merge-commit.sample = .git\hooks\pre-merge-commit.sample
+		.git\hooks\pre-applypatch.sample = .git\hooks\pre-applypatch.sample
+		.git\hooks\pre-push.sample = .git\hooks\pre-push.sample
+		.git\hooks\update.sample = .git\hooks\update.sample
+		.git\hooks\push-to-checkout.sample = .git\hooks\push-to-checkout.sample
+		.git\refs\.DS_Store = .git\refs\.DS_Store
+		.git\refs\heads\fc714\create-base-code-and-repository = .git\refs\heads\fc714\create-base-code-and-repository
+		.git\refs\heads\master = .git\refs\heads\master
+		.git\refs\tags\v1.0.4-sit = .git\refs\tags\v1.0.4-sit
+		.git\refs\tags\v1.0.1-sit = .git\refs\tags\v1.0.1-sit
+		.git\refs\tags\v1.0.0-sit = .git\refs\tags\v1.0.0-sit
+		.git\refs\tags\v1.0.2-sit = .git\refs\tags\v1.0.2-sit
+		.git\refs\remotes\origin\fc714\create-base-code-and-repository = .git\refs\remotes\origin\fc714\create-base-code-and-repository
+		.git\refs\remotes\origin\HEAD = .git\refs\remotes\origin\HEAD
+		.git\index = .git\index
+		.git\packed-refs = .git\packed-refs
+		.git\COMMIT_EDITMSG = .git\COMMIT_EDITMSG
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "gitlab", "gitlab", "{AB4C3BE1-D13B-4A72-9CAD-005E110786B3}"
+	ProjectSection(SolutionItems) = preProject
+		.gitlab-ci.yml = .gitlab-ci.yml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{2F0CAEFA-9669-4C07-BF63-252025A681C8}"
+	ProjectSection(SolutionItems) = preProject
+		productionreadiness.md = productionreadiness.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD140C96-6168-48CF-8810-A3E4AD83BBB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD140C96-6168-48CF-8810-A3E4AD83BBB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD140C96-6168-48CF-8810-A3E4AD83BBB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD140C96-6168-48CF-8810-A3E4AD83BBB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F49E6B16-202D-4AD6-820B-E3EC54DA5D4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F49E6B16-202D-4AD6-820B-E3EC54DA5D4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F49E6B16-202D-4AD6-820B-E3EC54DA5D4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F49E6B16-202D-4AD6-820B-E3EC54DA5D4F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF751FE3-9F2D-41D5-AD35-777E96F1EC61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF751FE3-9F2D-41D5-AD35-777E96F1EC61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF751FE3-9F2D-41D5-AD35-777E96F1EC61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF751FE3-9F2D-41D5-AD35-777E96F1EC61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AE7892F-9338-4847-A464-99CA014C6515}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AE7892F-9338-4847-A464-99CA014C6515}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AE7892F-9338-4847-A464-99CA014C6515}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AE7892F-9338-4847-A464-99CA014C6515}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CF266A1-D0C5-4AE5-BA88-8A5A1D87BCD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CF266A1-D0C5-4AE5-BA88-8A5A1D87BCD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CF266A1-D0C5-4AE5-BA88-8A5A1D87BCD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CF266A1-D0C5-4AE5-BA88-8A5A1D87BCD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{606A75ED-8DCE-4567-BC81-DA4D90561BB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606A75ED-8DCE-4567-BC81-DA4D90561BB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606A75ED-8DCE-4567-BC81-DA4D90561BB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606A75ED-8DCE-4567-BC81-DA4D90561BB8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AD140C96-6168-48CF-8810-A3E4AD83BBB8} = {F4228EA9-1AC9-4F37-9126-A2C49382C600}
+		{F49E6B16-202D-4AD6-820B-E3EC54DA5D4F} = {F4228EA9-1AC9-4F37-9126-A2C49382C600}
+		{EF751FE3-9F2D-41D5-AD35-777E96F1EC61} = {F4228EA9-1AC9-4F37-9126-A2C49382C600}
+		{2AE7892F-9338-4847-A464-99CA014C6515} = {F4228EA9-1AC9-4F37-9126-A2C49382C600}
+		{EE7EACCE-55D6-4C13-B9AE-72F6B797D506} = {F4228EA9-1AC9-4F37-9126-A2C49382C600}
+		{5CF266A1-D0C5-4AE5-BA88-8A5A1D87BCD6} = {EE7EACCE-55D6-4C13-B9AE-72F6B797D506}
+		{606A75ED-8DCE-4567-BC81-DA4D90561BB8} = {EE7EACCE-55D6-4C13-B9AE-72F6B797D506}
+		{4EBA0CCD-DAEA-4BBC-892B-417C1DF0A2B6} = {A88767CE-CC94-43A0-A7E5-D8C05A46AF12}
+		{48385F43-2B59-49AF-8F91-6CF191ACEE58} = {A88767CE-CC94-43A0-A7E5-D8C05A46AF12}
+		{3BC73455-3F45-4979-992C-88F4D9C72847} = {A88767CE-CC94-43A0-A7E5-D8C05A46AF12}
+		{16124AB1-DCEE-4B31-8092-A51BD701910C} = {A88767CE-CC94-43A0-A7E5-D8C05A46AF12}
+		{A2CA582D-D9D4-4A2E-A38E-D58A975FDEC0} = {A88767CE-CC94-43A0-A7E5-D8C05A46AF12}
+		{AB4C3BE1-D13B-4A72-9CAD-005E110786B3} = {A88767CE-CC94-43A0-A7E5-D8C05A46AF12}
+		{2F0CAEFA-9669-4C07-BF63-252025A681C8} = {A88767CE-CC94-43A0-A7E5-D8C05A46AF12}
+	EndGlobalSection
+EndGlobal

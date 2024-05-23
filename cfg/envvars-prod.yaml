@@ -1,0 +1,9 @@
+environment_variables:
+  # Datadog config
+  DD_LOG_LEVEL: info
+
+  # Global log configuration
+  Serilog__MinimumLevel__Default: "Warning"
+
+  # Transactions Adapter publisher
+  TransactionsAdapter__TransactionAdapterPublisherConfiguration__TopicId: system.financial-crime.transactions-adapter.result-1.0

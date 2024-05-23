@@ -1,0 +1,33 @@
+service_name: fc-transactions-adapter
+stack: dotnetcore
+owner: tmj
+
+notification_channels:
+  - customer-lifecycle-devops
+
+notification_emails:
+  - "questrade-scrumteam-tmj@questrade.com"
+
+pubsubs_to_publish:
+  - system.financial-crime.transactions-adapter.result-1.0
+
+pubsubs_to_subscribe:
+  - name: system.financial-crime.transactions-adapter.add-1.0
+    retryPolicy:
+      maximumBackoff: 60s
+      minimumBackoff: 3s
+
+release_managers:
+  users:
+    - dmohan@questrade.com
+    - igtanure@questrade.com
+    - jhasse@questrade.com
+    - lrogerio@questrade.com
+    - spotasio@questrade.com
+    - wantunes@questrade.com
+    - msilva@questrade.com
+
+business_line:
+  name: enterprise
+  product: financial-crime
+  domain: financial-crime

@@ -1,0 +1,45 @@
+environment_variables:
+  ASPNETCORE_ENVIRONMENT: $(ENV)
+
+  # Transactions Adapter Subscriber
+  TransactionsAdapter__TransactionsAdapterSubscriberConfiguration__Enable: true
+  TransactionsAdapter__TransactionsAdapterSubscriberConfiguration__MessageMetadataDisposition: None
+  TransactionsAdapter__TransactionsAdapterSubscriberConfiguration__ProjectId: $(PROJECT)
+  TransactionsAdapter__TransactionsAdapterSubscriberConfiguration__SubscriptionId: system.financial-crime.transactions-adapter.add-1.0.$(ENV).fc-transactions-adapter
+
+  # Transactions Adapter publisher
+  TransactionsAdapter__TransactionAdapterPublisherConfiguration__Enable: true
+  TransactionsAdapter__TransactionAdapterPublisherConfiguration__MaximumMessagePublishAttempts: 10
+  TransactionsAdapter__TransactionAdapterPublisherConfiguration__ProjectId: $(PROJECT)
+  TransactionsAdapter__TransactionAdapterPublisherConfiguration__TopicId: system.financial-crime.transactions-adapter.result-1.0.$(ENV)
+
+  # DataDog
+  DataDog__StatsD__Host: $(DD_AGENT_HOST)
+  DataDog__StatsD__HostName: $(DD_AGENT_HOST)
+  DataDog__StatsD__IsEnabled: true
+  DataDog__StatsD__Prefix: fincrime.fc_transactions_adapter
+  DD_LOG_LEVEL: debug
+
+  # Global log configuration
+  Logging__IncludeScopes: "true"
+  Serilog__MinimumLevel__Default: "Information"
+
+  # Microsoft log level overrides
+  Serilog__MinimumLevel__Override__System: "Warning"
+  Serilog__MinimumLevel__Override__Microsoft: "Warning"
+  Serilog__MinimumLevel__Override__Microsoft.Hosting.Lifetime: "Warning"
+  Serilog__MinimumLevel__Override__Microsoft.AspNetCore: "Warning"
+  Serilog__MinimumLevel__Override__Microsoft.AspNetCore.Mvc: "Warning"
+  Serilog__MinimumLevel__Override__Microsoft.AspNetCore.Authentication: "Warning"
+  Serilog__MinimumLevel__Override__Microsoft.AspNetCore.Identity: "Warning"
+  Serilog__MinimumLevel__Override__Microsoft.AspNetCore.Session.SessionMiddleware: "Error"
+
+  # Serilog sinks (outputs) and configuration
+  Serilog__WriteTo__0__Name: "Console"
+  Serilog__WriteTo__0__Args__formatter: "Serilog.Formatting.Json.JsonFormatter"
+
+  # Serilog log enriching
+  Serilog__Enrich__0: "FromLogContext"
+  Serilog__Enrich__1: "WithMachineName"
+  Serilog__Enrich__2: "WithThreadId"
+  Serilog__Enrich__3: "WithExceptionDetails"
